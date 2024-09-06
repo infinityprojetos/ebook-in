@@ -3,12 +3,15 @@ import Form from "./components/Form";
 import Thanks from "./components/Thanks";
 import HomeQrCode from "./components/HomeQrCode";
 import Imagem from "./components/Imagem";
+import Logo from "./components/Logo";
 
 function App() {
   return (
     <div className="flex flex-col bg-gradient-to-r from-red-500 to-black">
     <Router>
+      
       <Imagem>
+        
         <Routes>
           {/* Rota para exibir os QR codes */}
           <Route path="/" element={<HomeQrCode />} />
@@ -20,7 +23,9 @@ function App() {
           {/* Rota para a página de agradecimento */}
           <Route path="/thanks" element={<Thanks />} />
         </Routes>
+        <Logo />
       </Imagem>
+      
     </Router>
     </div>
   );

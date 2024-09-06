@@ -12,7 +12,7 @@ const QRCodeGenerator = ({ location }) => {
      
       <QRCodeCanvas value={`${url}`} size={256} />
       <p className="mt-2">
-        Escaneie o QR code para acessar o formulário de Ebook.
+        Baixe sua coletânea de Ebooks aqui!
       </p>
     </div>
   );

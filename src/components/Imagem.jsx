@@ -4,19 +4,14 @@ import React from 'react';
 const Imagem = ({ children }) => {
   return (
     <div
-      className="min-h-screen flex flex-col items-center justify-center bg-cover bg-center"
-      style={{ 
-        backgroundImage: `url('/imagens/in.png')`, // Corrija o caminho se necessário
-        backgroundSize: 'contain', // Ajusta a imagem para caber dentro do contêiner sem cortar
-        backgroundPosition: 'top', // Centraliza a imagem
-        backgroundRepeat: 'no-repeat', // Evita a repetição da imagem
-        backgroundAttachment: 'fixed', // Mantém a imagem fixa enquanto rola a página
-        height: '50px', // Define a altura do contêiner para a altura total da viewport
-        width: '100vw',
-        
-        // Define a largura do contêiner para a largura total da viewport
-      }}
+      className="min-h-screen flex flex-col items-center justify-center relative" // Remove o bg-cover e bg-center
     >
+      <img 
+        src="/public/imagens/logo.png" // Corrija o caminho se necessário
+        alt="Logo"
+        className="w-48 h-48 mb-6" // Define tamanho da imagem e ajusta a margem inferior
+        style={{ transform: 'translateY(-50%)' }} // Desloca um pouco a imagem para cima
+      />
       {children}
     </div>
   );
