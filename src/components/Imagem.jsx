@@ -7,7 +7,7 @@ const Imagem = ({ children }) => {
       className="min-h-screen flex flex-col items-center justify-center relative" // Remove o bg-cover e bg-center
     >
       <img 
-        src="/public/imagens/logo.png" // Corrija o caminho se necessário
+        src="/imagens/logo.png" // Corrija o caminho se necessário
         alt="Logo"
         className="w-48 h-48 mb-6" // Define tamanho da imagem e ajusta a margem inferior
         style={{ transform: 'translateY(-50%)' }} // Desloca um pouco a imagem para cima
