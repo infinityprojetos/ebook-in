@@ -10,7 +10,7 @@ const Logo = () => {
       <img 
         src="imagens/inlogobggrey.png" // Corrija o caminho para a sua imagem
         alt="Logo" 
-        className="w-96 h-auto" // Ajuste o tamanho conforme necessário
+        className="ml-4 w-60 h-auto" // Ajuste o tamanho conforme necessário
       />
     </div>
   );

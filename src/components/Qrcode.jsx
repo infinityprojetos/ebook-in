@@ -11,8 +11,8 @@ const QRCodeGenerator = ({ location }) => {
     <div className="flex flex-col items-center text-white">
      
       <QRCodeCanvas value={`${url}`} size={256} />
-      <p className="mt-2">
-        Baixe sua coletânea de Ebooks aqui!
+      <p className=" mt-2 text-neutral-100 bg-gray-800 rounded">
+        Baixe sua coletânea de Ebooks aqui !
       </p>
     </div>
   );
